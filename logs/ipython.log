@@ -1,0 +1,23 @@
+2025-04-17 03:35:57,351 INFO ipython === bench console session ===
+2025-04-17 03:35:57,352 INFO ipython from frappe.core.doctype.doctype.doctype import new_doctype
+
+# Create UserG5
+user_g5 = new_doctype("UserG5")
+user_g5.module = "todo_app"
+user_g5.save()
+
+# Create WorkspaceG5
+workspace_g5 = new_doctype("WorkspaceG5")
+workspace_g5.module = "todo_app"
+workspace_g5.save()
+
+# Create UserWorkspaceG5
+user_workspace_g5 = new_doctype("UserWorkspaceG5")
+user_workspace_g5.module = "todo_app"
+user_workspace_g5.save()
+
+# Create ScheduleG5
+schedule_g5 = new_doctype("ScheduleG5")
+schedule_g5.module = "todo_app"
+schedule_g5.save()
+2025-04-17 03:35:57,352 INFO ipython === session end ===

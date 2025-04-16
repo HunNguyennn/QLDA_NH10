@@ -1,0 +1,258 @@
+2025-04-16 22:09:58,198 DEBUG cd frappe-bench && python3 -m venv env
+2025-04-16 22:10:01,133 DEBUG cd frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-16 22:10:02,865 DEBUG cd frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-04-16 22:10:04,794 LOG Getting frappe
+2025-04-16 22:10:04,794 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2025-04-16 22:10:08,457 LOG Installing frappe
+2025-04-16 22:10:08,457 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/frappe 
+2025-04-16 22:10:39,095 DEBUG cd /home/hung123/frappe-bench/apps/frappe && yarn install --check-files
+2025-04-16 22:11:04,971 DEBUG cd frappe-bench && bench build
+2025-04-16 22:11:05,100 INFO /home/hung123/.local/bin/bench build
+2025-04-16 22:11:21,604 LOG setting up backups
+2025-04-16 22:11:21,695 LOG backups were set up
+2025-04-16 22:11:21,707 INFO Bench frappe-bench initialized
+2025-04-16 22:16:26,300 INFO /home/hung123/.local/bin/bench new-site mysite.local
+2025-04-16 22:16:44,751 INFO /home/hung123/.local/bin/bench new-site mysite.local
+2025-04-16 22:19:07,186 INFO /home/hung123/.local/bin/bench new-site mysite.local
+2025-04-16 22:19:22,236 INFO /home/hung123/.local/bin/bench drop-site mysite.local
+2025-04-16 22:19:36,405 INFO /home/hung123/.local/bin/bench drop-site mysite.local --force
+2025-04-16 22:19:54,049 INFO /home/hung123/.local/bin/bench new-site mysite.local
+2025-04-16 22:19:59,432 INFO /home/hung123/.local/bin/bench drop-site mysite.local --force
+2025-04-16 22:20:11,835 INFO /home/hung123/.local/bin/bench new-site mysite.local
+2025-04-16 22:22:42,553 INFO /home/hung123/.local/bin/bench use mysite.local
+2025-04-16 22:22:47,176 INFO /home/hung123/.local/bin/bench start
+2025-04-16 22:22:47,567 INFO /home/hung123/.local/bin/bench worker
+2025-04-16 22:22:47,574 INFO /home/hung123/.local/bin/bench schedule
+2025-04-16 22:22:47,574 INFO /home/hung123/.local/bin/bench serve --port 8000
+2025-04-16 22:22:47,576 INFO /home/hung123/.local/bin/bench watch
+2025-04-16 22:35:17,058 INFO /home/hung123/.local/bin/bench --version
+2025-04-16 22:35:23,355 INFO /home/hung123/.local/bin/bench src
+2025-04-16 22:35:47,769 INFO /home/hung123/.local/bin/bench --help
+2025-04-16 22:35:52,758 INFO /home/hung123/.local/bin/bench version
+2025-04-16 22:36:30,503 INFO /home/hung123/.local/bin/bench update --pull
+2025-04-16 22:36:31,902 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-04-16 22:36:44,271 DEBUG cd /home/hung123/frappe-bench/apps/frappe && git fetch upstream --unshallow
+2025-04-16 22:37:33,812 LOG pulling frappe
+2025-04-16 22:37:33,812 DEBUG cd /home/hung123/frappe-bench/apps/frappe && git pull  upstream version-14
+2025-04-16 22:37:35,210 DEBUG cd /home/hung123/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2025-04-16 22:37:43,484 INFO /home/hung123/.local/bin/bench version
+2025-04-16 22:37:47,168 INFO /home/hung123/.local/bin/bench get-app erpnext --branch version-14
+2025-04-16 22:37:47,819 LOG Getting erpnext
+2025-04-16 22:37:47,819 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2025-04-16 22:37:54,683 LOG Installing erpnext
+2025-04-16 22:37:54,683 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/erpnext 
+2025-04-16 22:38:11,562 DEBUG cd /home/hung123/frappe-bench/apps/erpnext && yarn install --check-files
+2025-04-16 22:38:13,251 DEBUG bench build --app erpnext
+2025-04-16 22:38:13,334 INFO /home/hung123/.local/bin/bench build --app erpnext
+2025-04-16 22:38:24,636 INFO /home/hung123/.local/bin/bench --site mysite.local install-app erpnext
+2025-04-16 22:38:57,902 INFO /home/hung123/.local/bin/bench --site mysite.local backup
+2025-04-16 22:39:03,111 INFO /home/hung123/.local/bin/bench --site mysite.local reinstall
+2025-04-16 22:40:21,640 INFO /home/hung123/.local/bin/bench --site mysite.local install-app erpnext
+2025-04-16 22:41:33,914 INFO /home/hung123/.local/bin/bench update
+2025-04-16 22:41:35,151 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-04-16 22:41:47,213 DEBUG cd /home/hung123/frappe-bench/apps/frappe && git fetch upstream --unshallow
+2025-04-16 22:41:49,569 LOG pulling frappe
+2025-04-16 22:41:49,569 DEBUG cd /home/hung123/frappe-bench/apps/frappe && git pull  upstream version-14
+2025-04-16 22:41:50,560 DEBUG cd /home/hung123/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2025-04-16 22:41:50,621 DEBUG cd /home/hung123/frappe-bench/apps/erpnext && git fetch upstream --unshallow
+2025-04-16 22:43:14,632 LOG pulling erpnext
+2025-04-16 22:43:14,633 DEBUG cd /home/hung123/frappe-bench/apps/erpnext && git pull  upstream version-14
+2025-04-16 22:43:15,689 DEBUG cd /home/hung123/frappe-bench/apps/erpnext && find . -name "*.pyc" -delete
+2025-04-16 22:43:15,783 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-16 22:43:16,869 LOG Installing frappe
+2025-04-16 22:43:16,870 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/frappe 
+2025-04-16 22:43:19,588 DEBUG cd /home/hung123/frappe-bench/apps/frappe && yarn install --check-files
+2025-04-16 22:43:24,580 LOG Installing erpnext
+2025-04-16 22:43:24,580 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/erpnext 
+2025-04-16 22:43:26,205 DEBUG cd /home/hung123/frappe-bench/apps/erpnext && yarn install --check-files
+2025-04-16 22:43:27,278 WARNING /home/hung123/.local/bin/bench update executed with exit code 1
+2025-04-16 22:43:34,800 INFO /home/hung123/.local/bin/bench restart
+2025-04-16 22:44:07,466 INFO /home/hung123/.local/bin/bench start
+2025-04-16 22:44:07,733 INFO /home/hung123/.local/bin/bench worker
+2025-04-16 22:44:07,734 INFO /home/hung123/.local/bin/bench watch
+2025-04-16 22:44:07,742 INFO /home/hung123/.local/bin/bench serve --port 8000
+2025-04-16 22:44:07,747 INFO /home/hung123/.local/bin/bench schedule
+2025-04-16 22:45:34,907 INFO /home/hung123/.local/bin/bench --site mysite.local migrate
+2025-04-16 22:46:00,391 INFO /home/hung123/.local/bin/bench start
+2025-04-16 22:46:00,680 INFO /home/hung123/.local/bin/bench watch
+2025-04-16 22:46:00,684 INFO /home/hung123/.local/bin/bench serve --port 8000
+2025-04-16 22:46:00,699 INFO /home/hung123/.local/bin/bench schedule
+2025-04-16 22:46:00,705 INFO /home/hung123/.local/bin/bench worker
+2025-04-16 22:48:46,482 INFO /home/hung123/.local/bin/bench stop
+2025-04-16 22:48:48,963 INFO /home/hung123/.local/bin/bench
+2025-04-16 22:48:54,662 INFO /home/hung123/.local/bin/bench start
+2025-04-16 22:51:05,542 INFO /home/hung123/.local/bin/bench restart
+2025-04-16 22:51:20,472 INFO /home/hung123/.local/bin/bench --site mysite.local migrate
+2025-04-16 22:52:20,453 INFO /home/hung123/.local/bin/bench stop
+2025-04-16 22:53:03,214 INFO /home/hung123/.local/bin/bench start
+2025-04-16 22:54:21,537 INFO /home/hung123/.local/bin/bench start
+2025-04-16 22:54:21,848 INFO /home/hung123/.local/bin/bench serve --port 8000
+2025-04-16 22:54:21,860 INFO /home/hung123/.local/bin/bench schedule
+2025-04-16 22:54:21,875 INFO /home/hung123/.local/bin/bench worker
+2025-04-16 22:54:21,888 INFO /home/hung123/.local/bin/bench watch
+2025-04-16 22:55:30,416 INFO /home/hung123/.local/bin/bench --site mysite.local migrate
+2025-04-16 22:56:37,826 INFO /home/hung123/.local/bin/bench stop
+2025-04-16 22:56:53,194 INFO /home/hung123/.local/bin/bench restart
+2025-04-16 22:58:20,423 INFO /home/hung123/.local/bin/bench --site mysite.local clear-cache
+2025-04-16 22:58:23,337 INFO /home/hung123/.local/bin/bench update --patch
+2025-04-16 22:58:24,992 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-04-17 00:00:02,016 INFO /home/hung123/.local/bin/bench --verbose --site all backup
+2025-04-17 02:03:35,687 INFO /home/hung123/.local/bin/bench new-app todo_app
+2025-04-17 02:03:35,699 LOG creating new app todo_app
+2025-04-17 03:26:05,937 INFO /home/hung123/.local/bin/bench new-app todo_app
+2025-04-17 03:26:05,983 LOG creating new app todo_app
+2025-04-17 03:27:08,082 LOG Installing todo_app
+2025-04-17 03:27:08,111 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/todo_app 
+2025-04-17 03:27:14,029 DEBUG bench build --app todo_app
+2025-04-17 03:27:14,199 INFO /home/hung123/.local/bin/bench build --app todo_app
+2025-04-17 03:30:10,132 INFO /home/hung123/.local/bin/bench --site mysite.local new-doctype UserG5 --module todo_app
+2025-04-17 03:33:22,132 INFO /home/hung123/.local/bin/bench --site mysite.local new-doctype UserG5 --module todo_app
+2025-04-17 03:34:47,914 INFO /home/hung123/.local/bin/bench --site mysite.local console
+2025-04-17 03:39:57,989 INFO /home/hung123/.local/bin/bench --site mysite.local new-doctype UserG5 --module todo_app
+2025-04-17 04:31:31,498 INFO /home/hung123/.local/bin/bench version
+2025-04-17 04:32:16,666 INFO /home/hung123/.local/bin/bench doctor
+2025-04-17 04:33:01,440 INFO /home/hung123/.local/bin/bench start worker
+2025-04-17 04:33:01,456 WARNING /home/hung123/.local/bin/bench start worker executed with exit code 2
+2025-04-17 04:33:51,525 INFO /home/hung123/.local/bin/bench new-app enterprise_workspace
+2025-04-17 04:33:51,529 LOG creating new app enterprise_workspace
+2025-04-17 04:34:28,025 LOG Installing enterprise_workspace
+2025-04-17 04:34:28,026 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/enterprise_workspace 
+2025-04-17 04:34:30,818 DEBUG bench build --app enterprise_workspace
+2025-04-17 04:34:30,934 INFO /home/hung123/.local/bin/bench build --app enterprise_workspace
+2025-04-17 04:35:38,845 INFO /home/hung123/.local/bin/bench make-doctype Enterprise Workspace --module Enterprise Workspace
+2025-04-17 04:40:12,900 INFO /home/hung123/.local/bin/bench --site mysite.local install-app enterprise_workspace
+2025-04-17 04:41:53,684 INFO /home/hung123/.local/bin/bench --site mysite.local install-app enterprise_workspace
+2025-04-17 04:42:14,868 INFO /home/hung123/.local/bin/bench --site mysite.local remove-from-installed-apps enterprise_workspace
+2025-04-17 04:42:15,153 INFO /home/hung123/.local/bin/bench --force --site mysite.local install-app enterprise_workspace
+2025-04-17 04:43:17,025 INFO /home/hung123/.local/bin/bench --site mysite.local install-app enterprise_workspace
+2025-04-17 04:43:27,135 INFO /home/hung123/.local/bin/bench --site mysite.local uninstall-app enterprise_workspace --force
+2025-04-17 04:43:49,380 INFO /home/hung123/.local/bin/bench --site mysite.local install-app enterprise_workspace
+2025-04-17 04:49:55,240 INFO /home/hung123/.local/bin/bench --site mysite.local make-module enterprise_workspace
+2025-04-17 04:50:05,725 INFO /home/hung123/.local/bin/bench --site mysite.local set-config developer_mode 1
+2025-04-17 04:50:06,053 INFO /home/hung123/.local/bin/bench make-app enterprise_workspace
+2025-04-17 04:50:20,831 INFO /home/hung123/.local/bin/bench --site mysite.local generate-doctype enterprise_workspace Workspace Project Workspace Task Workspace Document Workspace Event Workspace Discussion
+2025-04-17 04:50:35,115 INFO /home/hung123/.local/bin/bench start
+2025-04-17 04:53:03,013 INFO /home/hung123/.local/bin/bench drop-site mysite.local
+2025-04-17 04:53:27,458 INFO /home/hung123/.local/bin/bench new-site mysite.local
+2025-04-17 04:53:51,201 INFO /home/hung123/.local/bin/bench stop
+2025-04-17 04:56:05,056 INFO /home/hung123/.local/bin/bench stop
+2025-04-17 04:56:13,734 INFO /home/hung123/.local/bin/bench clear-cache
+2025-04-17 04:57:27,373 INFO /home/hung123/.local/bin/bench reinstall --admin-password admin123
+2025-04-17 04:59:00,218 INFO /home/hung123/.local/bin/bench set-config -g enable_scheduler 1
+2025-04-17 04:59:00,746 INFO /home/hung123/.local/bin/bench restart
+2025-04-17 04:59:19,434 INFO /home/hung123/.local/bin/bench start
+2025-04-17 05:01:25,893 INFO /home/hung123/.local/bin/bench --site mysite.local migrate
+2025-04-17 05:01:29,580 INFO /home/hung123/.local/bin/bench build
+2025-04-17 05:02:11,953 INFO /home/hung123/.local/bin/bench start --verbose
+2025-04-17 05:02:11,966 WARNING /home/hung123/.local/bin/bench start --verbose executed with exit code 2
+2025-04-17 05:04:02,429 INFO /home/hung123/.local/bin/bench stop
+2025-04-17 05:07:35,544 INFO /home/hung123/.local/bin/bench --site mysite.local show-config
+2025-04-17 05:07:55,933 INFO /home/hung123/.local/bin/bench --site mysite.local list-apps
+2025-04-17 05:08:22,276 INFO /home/hung123/.local/bin/bench --site mysite.local install-app erpnext
+2025-04-17 05:09:43,906 INFO /home/hung123/.local/bin/bench --site mysite.local install-app enterprise_workspace
+2025-04-17 05:10:08,371 INFO /home/hung123/.local/bin/bench --site mysite.local list-apps
+2025-04-17 05:10:41,810 INFO /home/hung123/.local/bin/bench setup requirements
+2025-04-17 05:10:41,823 DEBUG /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-17 05:10:43,366 LOG Installing frappe
+2025-04-17 05:10:43,366 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/frappe 
+2025-04-17 05:10:46,986 DEBUG cd /home/hung123/frappe-bench/apps/frappe && yarn install --check-files
+2025-04-17 05:10:55,280 LOG Installing erpnext
+2025-04-17 05:10:55,280 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/erpnext 
+2025-04-17 05:10:57,327 DEBUG cd /home/hung123/frappe-bench/apps/erpnext && yarn install --check-files
+2025-04-17 05:10:57,913 LOG Installing todo_app
+2025-04-17 05:10:57,914 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/todo_app 
+2025-04-17 05:11:00,136 LOG Installing enterprise_workspace
+2025-04-17 05:11:00,137 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/enterprise_workspace 
+2025-04-17 05:11:00,964 INFO /home/hung123/.local/bin/bench build
+2025-04-17 05:11:24,623 INFO /home/hung123/.local/bin/bench --site mysite.local clear-cache
+2025-04-17 05:11:25,732 INFO /home/hung123/.local/bin/bench restart
+2025-04-17 05:11:45,058 INFO /home/hung123/.local/bin/bench --site mysite.local list-apps
+2025-04-17 05:12:20,320 INFO /home/hung123/.local/bin/bench add-to-hosts
+2025-04-17 05:12:20,679 INFO /home/hung123/.local/bin/bench setup requirements
+2025-04-17 05:12:20,685 DEBUG /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-17 05:12:21,822 LOG Installing frappe
+2025-04-17 05:12:21,822 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/frappe 
+2025-04-17 05:12:24,253 DEBUG cd /home/hung123/frappe-bench/apps/frappe && yarn install --check-files
+2025-04-17 05:12:29,024 LOG Installing erpnext
+2025-04-17 05:12:29,024 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/erpnext 
+2025-04-17 05:12:31,575 DEBUG cd /home/hung123/frappe-bench/apps/erpnext && yarn install --check-files
+2025-04-17 05:12:31,977 LOG Installing todo_app
+2025-04-17 05:12:31,977 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/todo_app 
+2025-04-17 05:12:32,390 LOG Installing enterprise_workspace
+2025-04-17 05:12:32,391 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/enterprise_workspace 
+2025-04-17 05:12:34,873 INFO /home/hung123/.local/bin/bench new-site mysite.local --force --admin-password admin123
+2025-04-17 05:13:31,928 INFO /home/hung123/.local/bin/bench --site mysite.local install-app erpnext enterprise_workspace
+2025-04-17 05:15:30,535 INFO /home/hung123/.local/bin/bench start
+2025-04-17 05:16:21,480 INFO /home/hung123/.local/bin/bench --site mysite.local set-maintenance-mode on
+2025-04-17 05:16:21,763 INFO /home/hung123/.local/bin/bench --site mysite.local clear-cache
+2025-04-17 05:16:22,396 INFO /home/hung123/.local/bin/bench --site mysite.local set-maintenance-mode off
+2025-04-17 05:16:22,721 INFO /home/hung123/.local/bin/bench restart
+2025-04-17 05:16:38,081 INFO /home/hung123/.local/bin/bench use mysite.local
+2025-04-17 05:16:38,347 INFO /home/hung123/.local/bin/bench restart
+2025-04-17 05:17:24,052 INFO /home/hung123/.local/bin/bench version
+2025-04-17 05:17:29,417 INFO /home/hung123/.local/bin/bench start
+2025-04-17 05:19:31,030 INFO /home/hung123/.local/bin/bench setup env --python python3.10
+2025-04-17 05:19:31,036 DEBUG /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-17 05:19:32,222 DEBUG /home/hung123/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-04-17 05:19:33,051 DEBUG /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e ./apps/frappe
+2025-04-17 05:19:55,591 INFO /home/hung123/.local/bin/bench setup requirements
+2025-04-17 05:19:55,595 DEBUG /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-17 05:19:56,693 LOG Installing frappe
+2025-04-17 05:19:56,693 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/frappe 
+2025-04-17 05:19:58,978 DEBUG cd /home/hung123/frappe-bench/apps/frappe && yarn install --check-files
+2025-04-17 05:20:04,187 LOG Installing erpnext
+2025-04-17 05:20:04,187 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/erpnext 
+2025-04-17 05:20:06,395 DEBUG cd /home/hung123/frappe-bench/apps/erpnext && yarn install --check-files
+2025-04-17 05:20:06,880 LOG Installing todo_app
+2025-04-17 05:20:06,880 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/todo_app 
+2025-04-17 05:20:08,863 LOG Installing enterprise_workspace
+2025-04-17 05:20:08,863 DEBUG cd /home/hung123/frappe-bench && /home/hung123/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hung123/frappe-bench/apps/enterprise_workspace 
+2025-04-17 05:20:11,239 INFO /home/hung123/.local/bin/bench build
+2025-04-17 05:20:28,759 INFO /home/hung123/.local/bin/bench restart
+2025-04-17 05:21:43,108 INFO /home/hung123/.local/bin/bench --help
+2025-04-17 05:21:50,986 INFO /home/hung123/.local/bin/bench doctor
+2025-04-17 05:22:03,214 INFO /home/hung123/.local/bin/bench start
+2025-04-17 05:22:19,363 INFO /home/hung123/.local/bin/bench enable-scheduler
+2025-04-17 05:23:00,229 INFO /home/hung123/.local/bin/bench stop
+2025-04-17 05:24:21,215 INFO /home/hung123/.local/bin/bench start
+2025-04-17 05:24:21,563 INFO /home/hung123/.local/bin/bench serve --port 8000
+2025-04-17 05:24:21,595 INFO /home/hung123/.local/bin/bench worker
+2025-04-17 05:24:21,597 INFO /home/hung123/.local/bin/bench schedule
+2025-04-17 05:24:21,609 INFO /home/hung123/.local/bin/bench watch
+2025-04-17 05:24:30,226 INFO /home/hung123/.local/bin/bench doctor
+2025-04-17 05:25:25,028 INFO /home/hung123/.local/bin/bench doctor
+2025-04-17 05:25:59,043 INFO /home/hung123/.local/bin/bench worker
+2025-04-17 05:26:11,294 INFO /home/hung123/.local/bin/bench doctor
+2025-04-17 05:26:46,163 INFO /home/hung123/.local/bin/bench start
+2025-04-17 05:27:13,501 INFO /home/hung123/.local/bin/bench start
+2025-04-17 05:27:13,907 INFO /home/hung123/.local/bin/bench schedule
+2025-04-17 05:27:13,914 INFO /home/hung123/.local/bin/bench watch
+2025-04-17 05:27:13,920 INFO /home/hung123/.local/bin/bench serve --port 8000
+2025-04-17 05:27:13,932 INFO /home/hung123/.local/bin/bench worker
+2025-04-17 05:28:12,011 INFO /home/hung123/.local/bin/bench start
+2025-04-17 05:28:12,506 INFO /home/hung123/.local/bin/bench serve --port 8000
+2025-04-17 05:28:12,510 INFO /home/hung123/.local/bin/bench watch
+2025-04-17 05:28:12,520 INFO /home/hung123/.local/bin/bench schedule
+2025-04-17 05:28:12,526 INFO /home/hung123/.local/bin/bench worker
+2025-04-17 05:52:23,493 INFO /home/hung123/.local/bin/bench --site mysite.local migrate
+2025-04-17 05:57:56,429 INFO /home/hung123/.local/bin/bench --site mysite.local migrate
+2025-04-17 05:59:45,858 INFO /home/hung123/.local/bin/bench --site mysite.local doctor
+2025-04-17 06:00:01,711 INFO /home/hung123/.local/bin/bench --verbose --site all backup

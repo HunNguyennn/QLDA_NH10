@@ -1,0 +1,258 @@
+2025-04-16 22:44:14,046 ERROR frappe New Exception collected with id: 2025-04-16 22:44:13.759198-127.0.0.1-e43
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:44:14,702 ERROR frappe New Exception collected with id: 2025-04-16 22:44:14.699859-127.0.0.1-713
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:44:14,900 ERROR frappe New Exception collected with id: 2025-04-16 22:44:14.899353-127.0.0.1-003
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:44:15,096 ERROR frappe New Exception collected with id: 2025-04-16 22:44:15.094012-127.0.0.1-4d9
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:44:19,871 ERROR frappe New Exception collected with id: 2025-04-16 22:44:19.870399-127.0.0.1-08d
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:44:20,400 ERROR frappe New Exception collected with id: 2025-04-16 22:44:20.399729-127.0.0.1-ec2
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:44:20,467 ERROR frappe New Exception collected with id: 2025-04-16 22:44:20.465555-127.0.0.1-7d6
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:44:20,528 ERROR frappe New Exception collected with id: 2025-04-16 22:44:20.527774-127.0.0.1-285
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:47:23,206 ERROR frappe New Exception collected with id: 2025-04-16 22:47:23.163291-127.0.0.1-8e9
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:47:23,762 ERROR frappe New Exception collected with id: 2025-04-16 22:47:23.761990-127.0.0.1-ef3
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:49:08,844 ERROR frappe New Exception collected with id: 2025-04-16 22:49:08.843446-127.0.0.1-3f6
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:49:09,055 ERROR frappe New Exception collected with id: 2025-04-16 22:49:09.054821-127.0.0.1-ae2
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:51:10,143 ERROR frappe New Exception collected with id: 2025-04-16 22:51:10.142290-127.0.0.1-ba9
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:51:10,367 ERROR frappe New Exception collected with id: 2025-04-16 22:51:10.366633-127.0.0.1-ef5
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:51:41,505 ERROR frappe New Exception collected with id: 2025-04-16 22:51:41.504410-127.0.0.1-40a
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:51:41,757 ERROR frappe New Exception collected with id: 2025-04-16 22:51:41.755964-127.0.0.1-2d5
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:51:45,400 ERROR frappe New Exception collected with id: 2025-04-16 22:51:45.399050-127.0.0.1-c5a
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:51:45,881 ERROR frappe New Exception collected with id: 2025-04-16 22:51:45.880786-127.0.0.1-760
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:54:42,883 ERROR frappe New Exception collected with id: 2025-04-16 22:54:42.826659-127.0.0.1-908
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:54:43,404 ERROR frappe New Exception collected with id: 2025-04-16 22:54:43.403542-127.0.0.1-331
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:54:43,558 ERROR frappe New Exception collected with id: 2025-04-16 22:54:43.557115-127.0.0.1-6c8
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:54:43,785 ERROR frappe New Exception collected with id: 2025-04-16 22:54:43.785221-127.0.0.1-6cb
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:56:58,186 ERROR frappe New Exception collected with id: 2025-04-16 22:56:58.185432-127.0.0.1-1a5
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:56:58,376 ERROR frappe New Exception collected with id: 2025-04-16 22:56:58.375552-127.0.0.1-9eb
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:56:58,444 ERROR frappe New Exception collected with id: 2025-04-16 22:56:58.443519-127.0.0.1-dca
+Site: mysite.local
+Form Dict: {}
+2025-04-16 22:56:58,545 ERROR frappe New Exception collected with id: 2025-04-16 22:56:58.543942-127.0.0.1-08b
+Site: mysite.local
+Form Dict: {}
+2025-04-17 04:50:53,592 ERROR frappe Failed to run after request hook
+Site: mysite.local
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1489, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1351, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'enterprise_workspace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/app.py", line 87, in application
+    init_request(request)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/auth.py", line 206, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/sessions.py", line 233, in __init__
+    self.resume()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/sessions.py", line 319, in resume
+    data = self.get_session_record()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/sessions.py", line 338, in get_session_record
+    r = self.get_session_data()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/sessions.py", line 354, in get_session_data
+    data = self.get_session_data_from_db()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/sessions.py", line 395, in get_session_data_from_db
+    .where(sessions.lastupdate > get_expired_threshold(self.device))
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/sessions.py", line 471, in get_expired_threshold
+    now = frappe.utils.now()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/data.py", line 372, in now
+    return now_datetime().strftime(DATETIME_FORMAT)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/data.py", line 305, in now_datetime
+    dt = convert_utc_to_system_timezone(datetime.datetime.utcnow())
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/data.py", line 352, in convert_utc_to_system_timezone
+    time_zone = get_system_timezone()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/data.py", line 326, in get_system_timezone
+    return frappe.cache().get_value("time_zone", _get_system_timezone)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/data.py", line 319, in _get_system_timezone
+    return frappe.db.get_system_setting("time_zone") or "Asia/Kolkata"  # Default to India ?!
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/database/database.py", line 1301, in get_system_setting
+    return frappe.get_system_settings(key)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 2297, in get_system_settings
+    local.system_settings = get_cached_doc("System Settings")
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1117, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1208, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/model/base_document.py", line 69, in _get_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1520, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1495, in _load_app_hooks
+    print(f'Could not find app "{app}": \n{e}')
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1489, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1351, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'enterprise_workspace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/app.py", line 116, in application
+    response = handle_exception(e)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/permissions.py", line 830, in wrapper
+    return fn(e, *args, **kwargs)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/app.py", line 300, in handle_exception
+    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 2297, in get_system_settings
+    local.system_settings = get_cached_doc("System Settings")
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1117, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1208, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/model/base_document.py", line 69, in _get_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1520, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1495, in _load_app_hooks
+    print(f'Could not find app "{app}": \n{e}')
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1489, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1351, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'enterprise_workspace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/app.py", line 130, in application
+    run_after_request_hooks(request, response)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/app.py", line 146, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1520, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/hung123/frappe-bench/apps/frappe/frappe/__init__.py", line 1495, in _load_app_hooks
+    print(f'Could not find app "{app}": \n{e}')
+BrokenPipeError: [Errno 32] Broken pipe
